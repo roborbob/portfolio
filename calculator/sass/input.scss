@@ -7,7 +7,7 @@
   border-radius: 10px;
   margin: 100px auto;
   max-width: 450px;
-  box-shadow: 
+  box-shadow:
               20px 20px 50px grey,
               5px 5px black;
   // border-right: 4px solid grey;
@@ -41,7 +41,7 @@
       border-radius: 10px;
       border-bottom: 4px solid #666666;
       border-right: 4px solid #666666;
-      box-shadow: 4px 4px 8px #2E2977;
+      box-shadow: 5px 5px 8px #2E2977;
     }
     button:hover {
       transition: 0.4s;
@@ -49,11 +49,16 @@
     }
     button:focus {
       outline: none;
+      border: none;
+      background: #E6E6E6;
+      border: 2px solid #666666;
+      box-shadow: 2px 2px 4px #2E2977;
     }
     button:active {
       border: none;
       background: #E6E6E6;
       border: 2px solid #666666;
+      box-shadow: 2px 2px 4px #2E2977;
     }
   }
 }

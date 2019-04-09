@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/style.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/script.js" type="text/javascript"></script>
     <title>Calculator</title>
   </head>
@@ -11,26 +12,26 @@
     <div class="calculator">
       <div class="calculator-display">0</div>
       <div class="calculator-keys">
-        <button>C</button>
-        <button>()</button>
-        <button>%</button>
-        <button>&#247;</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>&#215;</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
-        <button>+/-</button>
-        <button>0</button>
-        <button>.</button>
-        <button>=</button>
+        <button class="clear">C</button>
+        <button class="brackets">()</button>
+        <button class="percent">%</button>
+        <button data-key="/" class="">&#247;</button>
+        <button data-key="7" class="seven">7</button>
+        <button data-key="8" class="eight">8</button>
+        <button data-key="9" class="nine">9</button>
+        <button data-key="*" class="">&#215;</button>
+        <button data-key="4" class="four">4</button>
+        <button data-key="5" class="five">5</button>
+        <button data-key="6" class="six">6</button>
+        <button data-key="-" class="minus">-</button>
+        <button data-key="1" class="one">1</button>
+        <button data-key="2" class="two">2</button>
+        <button data-key="3" class="three">3</button>
+        <button data-key="+" class="plus">+</button>
+        <button class="">+/-</button>
+        <button data-key="0" class="zero">0</button>
+        <button data-key="=" class="decimal">.</button>
+        <button class="equals">=</button>
       </div>
     </div>
 
