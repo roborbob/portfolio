@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Alien Solid";
+    src: url(../../assets/fonts/TrueType/SFAlienEncountersSolid.ttf);
+}
+@font-face {
+    font-family: "Streamster";
+    src: url(../../assets/fonts/streamster/Streamster.ttf);
+}
+
+.title-wrapper {
+    position: relative;
+    top: 30vh;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 999;
+    perspective: 1000px;
+    transition: transform 0.8s ease ;
+    transform-style: preserve-3d;
+    text-align: center;
+    @media screen and (min-width: 475px) {
+        top: 20vh;
+    }
+    h2 {
+        position: relative;
+        font-family: "Streamster";
+        font-size: 30px;
+        color: rgb(255, 55, 228);
+        top: 0;
+        transform: rotate(-10deg);
+        @media screen and (min-width: 475px) {
+            font-size: 50px;
+        }
+    }
+    h1 {
+        line-height: 1;
+        font-size: 30px;
+        font-weight: 100;
+        width: 100%;
+        text-transform: uppercase;
+        font-family: "Alien Solid";
+        background-clip: text;
+-webkit-background-clip: text;
+        background-image: linear-gradient(#022486 0%, #0AD0FD 30%, #BDFCFC 40%, #D8FFFF 44%, #00081C 44%, #00081C 50%, #074A67 52%, #1CD8FE 60%, #7FEDFE 62%, #96F5FC 70%, #0FD8FA 73%, #0BD2FD 88%, #AFFDFF 100%); 
+        fill: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        animation: zoom 3.5s ease-out 1;
+        @media screen and (min-width: 475px) {
+            font-size: 6vw;
+        }
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.02) rotateX(-45deg);
+        letter-spacing: 50px;
+    }
+    100% {
+        transform: scale(1) rotateX(0deg);
+        letter-spacing: 0;
+    }
+}

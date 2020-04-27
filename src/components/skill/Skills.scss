@@ -1,0 +1,79 @@
+$sass: 'Dancing Script' ,cursive;
+$react: 'Nanum Gothic', sans-serif;
+$html5: 'Bebas Neue', cursive;
+$javascript: 'Permanent Marker', cursive;
+$PHP: 'Karla', sans-serif;
+$C: 'Shadows Into Light', cursive;
+
+$skills: (
+    Sass: (
+     color:#ff0080, 
+     font-family: $sass
+    ),
+    Reactjs:(
+        color:#04FF00, 
+        font-family: $react
+        ),
+    html5:(
+        color:#00F7FF, 
+        font-family: $html5
+        ),
+    Javascript:
+        (color:#F7FF00, 
+        font-family: $javascript
+        ),
+    PHP:
+        (color:rgb(0, 255, 200), 
+        font-family: $javascript
+        ),  
+    C:
+        (color:rgb(255, 145, 0), 
+        font-family: $javascript
+        ),
+    SalesForce:
+        (color:rgb(255, 37, 55), 
+        font-family: $javascript
+        )
+    );  
+
+@each $name, $map in $skills {
+  .#{$name} {
+    // border: 0.1em solid map-get($map, color);
+    position: relative;
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+    background: none;
+    margin: 10px;
+    border-radius: 50px;
+    transition: 0.7s;
+    &:hover {
+        border-radius: 0px;
+        cursor: pointer;
+    }
+        p {
+            // color: map-get($map, color);
+            color: white;
+            text-shadow: 
+                0 0 2px white, 
+                0 0 10px map-get($map, color), 
+                0 0 30px map-get($map, color);
+            padding: 15px;
+            font-weight: 500;
+            font-size: 1.5em;
+            margin: 0;
+            line-height: 1;
+            transition: 0.3s;
+            font-family: map-get($map, font-family);;  
+        }
+        // p:hover {
+        // color: white;
+        // text-shadow: 
+        //     0 0 2px white, 
+        //     0 0 10px map-get($map, color), 
+        //     0 0 30px map-get($map, color),
+        // }
+    }
+}
+
+
